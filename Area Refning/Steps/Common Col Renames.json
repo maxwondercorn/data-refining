@@ -1,0 +1,13 @@
+[
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ID",
+    "newColumnName": "id",
+    "description": "Rename column ID to id"
+  },  {
+    "op": "core/column-rename",
+    "oldColumnName": "SiteID",
+    "newColumnName": "location_id",
+    "description": "Rename column SiteID to location_id"
+  }
+]

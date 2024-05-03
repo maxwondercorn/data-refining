@@ -1,0 +1,341 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Area",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Area using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Short",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Short using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "VSM",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column VSM using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Owners",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Owners using expression value.trim()"
+  }, {
+    "op": "core/column-rename",
+    "oldColumnName": "ID",
+    "newColumnName": "id",
+    "description": "Rename column ID to id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Area",
+    "newColumnName": "name",
+    "description": "Rename column Area to name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Short",
+    "newColumnName": "short_name",
+    "description": "Rename column Short to short_name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Target",
+    "newColumnName": "target_score",
+    "description": "Rename column Target to target_score"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Instructions",
+    "newColumnName": "instructions",
+    "description": "Rename column Instructions to instructions"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Active",
+    "newColumnName": "is_active",
+    "description": "Rename column Active to is_active"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "VSM",
+    "newColumnName": "manager_id",
+    "description": "Rename column vsm to manager_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Modified By",
+    "newColumnName": "modified_by",
+    "description": "Rename column Modified By to modified_by"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "SortBy",
+    "newColumnName": "sort_by",
+    "description": "Rename column SortBy to sort_by"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "sort_by",
+    "newColumnName": "order_by",
+    "description": "Rename column sort_by to order_by"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Created",
+    "newColumnName": "created_at",
+    "description": "Rename column Created to created_at"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Modified",
+    "newColumnName": "updated_at",
+    "description": "Rename column Modified to updated_at"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Owners",
+    "newColumnName": "owners",
+    "description": "Rename column Owners to owners"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "order_by",
+    "newColumnName": "display_order",
+    "description": "Rename column order_by to display_order"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "modified_by",
+    "newColumnName": "updated_by",
+    "description": "Rename column modified_by to updated_by"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "SiteID",
+    "newColumnName": "location_id",
+    "description": "Rename column SiteID to location_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Created By",
+    "newColumnName": "created_by",
+    "description": "Rename column Created By to created_by"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Value Stream",
+    "newColumnName": "value_stream_id",
+    "description": "Rename column Value Stream to value_stream_id"
+  },{
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "is_active",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "false"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0"
+      }
+    ],
+    "description": "Mass edit cells in column is_active"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "is_active",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "true"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column is_active"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "is_active",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column is_active using expression value.toNumber()"
+  },  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "value_stream_id",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "value_stream_name",
+    "columnInsertIndex": 6,
+    "description": "Create column value_stream_name at index 6 based on column value_stream_id using expression grel:value"
+  },  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "created_at",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column created_at using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "updated_at",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column updated_at using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },{
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "manager_id",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "last_name",
+    "columnInsertIndex": 7,
+    "description": "Create column last_name at index 7 based on column manager_id using expression grel:value"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "last_name",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column last_name by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "last_name 1",
+    "newColumnName": "last_name",
+    "description": "Rename column last_name 1 to last_name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "last_name 2",
+    "newColumnName": "first_name",
+    "description": "Rename column last_name 2 to first_name"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "last_name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column last_name using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "first_name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column first_name using expression value.trim()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "last_name",
+    "expression": "grel:cells['last_name'].value.substring(0,5).toLowercase()+cells['first_name'].value.substring(0,3).toLowercase()",
+    "onError": "set-to-blank",
+    "newColumnName": "username",
+    "columnInsertIndex": 8,
+    "description": "Create column username at index 8 based on column last_name using expression grel:cells['last_name'].value.substring(0,5).toLowercase()+cells['first_name'].value.substring(0,3).toLowercase()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "username",
+    "expression": "grel:4",
+    "onError": "set-to-blank",
+    "newColumnName": "role_id",
+    "columnInsertIndex": 11,
+    "description": "Create column role_id at index 11 based on column username using expression grel:4"
+  }
+]

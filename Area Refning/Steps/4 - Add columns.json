@@ -1,0 +1,15 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "value_stream_id",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "value_stream_name",
+    "columnInsertIndex": 6,
+    "description": "Create column value_stream_name at index 6 based on column value_stream_id using expression grel:value"
+  }
+]

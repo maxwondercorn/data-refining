@@ -1,0 +1,62 @@
+[
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Area",
+    "newColumnName": "name",
+    "description": "Rename column Area to name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Short",
+    "newColumnName": "short_name",
+    "description": "Rename column Short to short_name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Target",
+    "newColumnName": "target_score",
+    "description": "Rename column Target to target_score"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Instructions",
+    "newColumnName": "instructions",
+    "description": "Rename column Instructions to instructions"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "VSM",
+    "newColumnName": "manager_id",
+    "description": "Rename column vsm to manager_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "SortBy",
+    "newColumnName": "sort_by",
+    "description": "Rename column SortBy to sort_by"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "sort_by",
+    "newColumnName": "order_by",
+    "description": "Rename column sort_by to order_by"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Owners",
+    "newColumnName": "owners",
+    "description": "Rename column Owners to owners"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "order_by",
+    "newColumnName": "display_order",
+    "description": "Rename column order_by to display_order"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Value Stream",
+    "newColumnName": "value_stream_id",
+    "description": "Rename column Value Stream to value_stream_id"
+  }
+]
