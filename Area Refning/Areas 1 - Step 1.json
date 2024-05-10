@@ -1,5 +1,15 @@
 [
   {
+    "op": "core/column-removal",
+    "columnName": "Item Type",
+    "description": "Remove column Item Type"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Path",
+    "description": "Remove column Path"
+  },
+  {
     "op": "core/text-transform",
     "engineConfig": {
       "facets": [],
@@ -50,7 +60,8 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column Owners using expression value.trim()"
-  }, {
+  },
+  {
     "op": "core/column-rename",
     "oldColumnName": "ID",
     "newColumnName": "id",
@@ -157,7 +168,8 @@
     "oldColumnName": "Value Stream",
     "newColumnName": "value_stream_id",
     "description": "Rename column Value Stream to value_stream_id"
-  },{
+  },
+  {
     "op": "core/mass-edit",
     "engineConfig": {
       "facets": [],
@@ -209,7 +221,8 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column is_active using expression value.toNumber()"
-  },  {
+  },
+  {
     "op": "core/column-addition",
     "engineConfig": {
       "facets": [],
@@ -221,7 +234,8 @@
     "newColumnName": "value_stream_name",
     "columnInsertIndex": 6,
     "description": "Create column value_stream_name at index 6 based on column value_stream_id using expression grel:value"
-  },  {
+  },
+  {
     "op": "core/text-transform",
     "engineConfig": {
       "facets": [],
@@ -246,7 +260,8 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column updated_at using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
-  },{
+  },
+  {
     "op": "core/column-addition",
     "engineConfig": {
       "facets": [],
