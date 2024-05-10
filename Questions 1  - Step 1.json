@@ -1,0 +1,235 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "Item Type",
+    "description": "Remove column Item Type"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Path",
+    "description": "Remove column Path"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CodeID",
+    "description": "Remove column CodeID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ID",
+    "newColumnName": "id",
+    "description": "Rename column ID to id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "SiteID",
+    "newColumnName": "location_id",
+    "description": "Rename column SiteID to location_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Active",
+    "newColumnName": "is_active",
+    "description": "Rename column Active to is_active"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Modified By",
+    "newColumnName": "modified_by",
+    "description": "Rename column Modified By to modified_by"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Created",
+    "newColumnName": "created_at",
+    "description": "Rename column Created to created_at"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Modified",
+    "newColumnName": "updated_at",
+    "description": "Rename column Modified to updated_at"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Category",
+    "newColumnName": "category_id",
+    "description": "Rename column Category to category_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NA",
+    "newColumnName": "allow_na",
+    "description": "Rename column NA to allow_na"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Code",
+    "newColumnName": "code",
+    "description": "Rename column Code to code"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Created By",
+    "newColumnName": "created_by",
+    "description": "Rename column Created By to created_by"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "is_active",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "false"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0"
+      }
+    ],
+    "description": "Mass edit cells in column is_active"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "is_active",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "true"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column is_active"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "is_active",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column is_active using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "created_at",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column created_at using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "updated_at",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column updated_at using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "allow_na",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "false"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0"
+      }
+    ],
+    "description": "Mass edit cells in column allow_na"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "allow_na",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "true"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column allow_na"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "allow_na",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column allow_na using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "id",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "new_id",
+    "columnInsertIndex": 1,
+    "description": "Create column new_id at index 1 based on column id using expression grel:value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "new_id",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column new_id using expression value.toNumber()"
+  }
+]
