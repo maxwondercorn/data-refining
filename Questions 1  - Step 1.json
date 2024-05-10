@@ -1,6 +1,11 @@
 [
   {
     "op": "core/column-removal",
+    "columnName": "Folder Child Count",
+    "description": "Remove column Folder Child Count"
+  },
+  {
+    "op": "core/column-removal",
     "columnName": "Item Type",
     "description": "Remove column Item Type"
   },
