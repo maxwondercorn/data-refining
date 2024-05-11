@@ -1,0 +1,361 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "App Created By",
+    "description": "Remove column App Created By"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "App Modified By",
+    "description": "Remove column App Modified By"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Color Tag",
+    "description": "Remove column Color Tag"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Compliance Asset Id",
+    "description": "Remove column Compliance Asset Id"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Content Type",
+    "description": "Remove column Content Type"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Folder Child Count",
+    "description": "Remove column Folder Child Count"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Item Child Count",
+    "description": "Remove column Item Child Count"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Label applied by",
+    "description": "Remove column Label applied by"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Label setting",
+    "description": "Remove column Label setting"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Retention label",
+    "description": "Remove column Retention label"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Retention label Applied",
+    "description": "Remove column Retention label Applied"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Item Type",
+    "description": "Remove column Item Type"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Path",
+    "description": "Remove column Path"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ID",
+    "newColumnName": "id",
+    "description": "Rename column ID to id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "SiteID",
+    "newColumnName": "location_id",
+    "description": "Rename column SiteID to location_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "modified_by",
+    "newColumnName": "updated_by",
+    "description": "Rename column modified_by to updated_by"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Modified By",
+    "newColumnName": "modified_by",
+    "description": "Rename column Modified By to modified_by"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Created By",
+    "newColumnName": "created_by",
+    "description": "Rename column Created By to created_by"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Created",
+    "newColumnName": "created_at",
+    "description": "Rename column Created to created_at"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Modified",
+    "newColumnName": "updated_at",
+    "description": "Rename column Modified to updated_at"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Audit Date",
+    "newColumnName": "audit_date",
+    "description": "Rename column Audit Date to audit_date"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "created_at",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column created_at using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "updated_at",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column updated_at using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "audit_date",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column audit_date using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Area",
+    "newColumnName": "area",
+    "description": "Rename column Area to area"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Audit Item",
+    "newColumnName": "audit_item",
+    "description": "Rename column Audit Item to audit_item"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Description",
+    "newColumnName": "description",
+    "description": "Rename column Description to description"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Item Score",
+    "newColumnName": "item_score",
+    "description": "Rename column Item Score to item_score"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Comment",
+    "newColumnName": "comment",
+    "description": "Rename column Comment to comment"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "WO",
+    "newColumnName": "work_order",
+    "description": "Rename column WO to work_order"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Response",
+    "newColumnName": "owner_response",
+    "description": "Rename column Response to owner_response"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Work Status",
+    "newColumnName": "work_status",
+    "description": "Rename column Work Status to work_status"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Reason",
+    "newColumnName": "rerason",
+    "description": "Rename column Reason to rerason"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Rejects",
+    "newColumnName": "reject_count",
+    "description": "Rename column Rejects to reject_count"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Lifetime",
+    "newColumnName": "lifetime",
+    "description": "Rename column Lifetime to lifetime"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Location",
+    "newColumnName": "location",
+    "description": "Rename column Location to location"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Year",
+    "newColumnName": "year",
+    "description": "Rename column Year to year"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Period",
+    "newColumnName": "period",
+    "description": "Rename column Period to period"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "PClosed",
+    "newColumnName": "period_closed",
+    "description": "Rename column PClosed to period_closed"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Assigned To",
+    "newColumnName": "assigned_to",
+    "description": "Rename column Assigned To to assigned_to"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Audit",
+    "newColumnName": "audit_name",
+    "description": "Rename column Audit to audit_name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Audit Score",
+    "newColumnName": "audit_score",
+    "description": "Rename column Audit Score to audit_score"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "audit_score",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column audit_score using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Closed",
+    "newColumnName": "date_closed",
+    "description": "Rename column Closed to date_closed"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Followup Updated",
+    "description": "Remove column Followup Updated"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Missing Followup Responses V2",
+    "description": "Remove column Missing Followup Responses V2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "New Followup",
+    "description": "Remove column New Followup"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Site Code",
+    "newColumnName": "site_code",
+    "description": "Rename column Site Code to site_code"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "StartWF",
+    "description": "Remove column StartWF"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Status",
+    "newColumnName": "status",
+    "description": "Rename column Status to status"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "UpdateFromFlow",
+    "description": "Remove column UpdateFromFlow"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Value Stream",
+    "newColumnName": "value_stream",
+    "description": "Rename column Value Stream to value_stream"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Work Audited By",
+    "newColumnName": "work_audit_by",
+    "description": "Rename column Work Audited By to work_audit_by"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Work Comment",
+    "newColumnName": "work_comment",
+    "description": "Rename column Work Comment to work_comment"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Work Completed",
+    "newColumnName": "work_completed",
+    "description": "Rename column Work Completed to work_completed"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "WorkDue",
+    "newColumnName": "work_due",
+    "description": "Rename column WorkDue to work_due"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "work_due",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column work_due using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  }
+]
