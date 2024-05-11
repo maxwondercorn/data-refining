@@ -1,0 +1,183 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "App Created By",
+    "description": "Remove column App Created By"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "App Modified By",
+    "description": "Remove column App Modified By"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Color Tag",
+    "description": "Remove column Color Tag"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CodeID",
+    "description": "Remove column CodeID"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Compliance Asset Id",
+    "description": "Remove column Compliance Asset Id"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Content Type",
+    "description": "Remove column Content Type"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Folder Child Count",
+    "description": "Remove column Folder Child Count"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Item Child Count",
+    "description": "Remove column Item Child Count"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Label applied by",
+    "description": "Remove column Label applied by"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Label setting",
+    "description": "Remove column Label setting"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Retention label",
+    "description": "Remove column Retention label"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Retention label Applied",
+    "description": "Remove column Retention label Applied"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Item Type",
+    "description": "Remove column Item Type"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Path",
+    "description": "Remove column Path"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Path",
+    "description": "Remove column Path"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ID",
+    "newColumnName": "id",
+    "description": "Rename column ID to id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "SiteID",
+    "newColumnName": "location_id",
+    "description": "Rename column SiteID to location_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Code",
+    "newColumnName": "code",
+    "description": "Rename column Code to code"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Description",
+    "newColumnName": "description",
+    "description": "Rename column Description to description"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Category",
+    "newColumnName": "category",
+    "description": "Rename column Category to category"
+  },
+
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Created By",
+    "newColumnName": "created_by",
+    "description": "Rename column Created By to created_by"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Created",
+    "newColumnName": "created_at",
+    "description": "Rename column Created to created_at"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Modified By",
+    "newColumnName": "modified_by",
+    "description": "Rename column Modified By to modified_by"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Modified",
+    "newColumnName": "updated_at",
+    "description": "Rename column Modified to updated_at"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Active",
+    "newColumnName": "is_activie",
+    "description": "Rename column Active to is_activie"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NA",
+    "newColumnName": "allow_na",
+    "description": "Rename column NA to allow_na"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "created_at",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column created_at using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "updated_at",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column updated_at using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "is_activie",
+    "expression": "grel:1",
+    "onError": "set-to-blank",
+    "newColumnName": "version",
+    "columnInsertIndex": 7,
+    "description": "Create column version at index 7 based on column is_activie using expression grel:1"
+  }
+]
