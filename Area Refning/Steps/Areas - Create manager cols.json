@@ -90,5 +90,30 @@
     "newColumnName": "role_id",
     "columnInsertIndex": 11,
     "description": "Create column role_id at index 11 based on column username using expression grel:4"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "last_name",
+          "expression": "value",
+          "columnName": "last_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "first_name",
+    "expression": "grel:cells['first_name'].value.toLowercase()+\".\"+cells['last_name'].value.toLowercase()+'@effem.com'",
+    "onError": "set-to-blank",
+    "newColumnName": "email",
+    "columnInsertIndex": 10,
+    "description": "Create column email at index 10 based on column first_name using expression grel:cells['first_name'].value.toLowercase()+\".\"+cells['last_name'].value.toLowercase()+'@effem.com'"
   }
 ]

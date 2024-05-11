@@ -23,5 +23,10 @@
     "op": "core/column-removal",
     "columnName": "value_stream_name",
     "description": "Remove column value_stream_name"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "email",
+    "description": "Remove column email"
   }
 ]
