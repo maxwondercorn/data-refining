@@ -1,0 +1,78 @@
+[
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "modified_by",
+    "newColumnName": "updated_by",
+    "description": "Rename column modified_by to updated_by"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Modified By",
+    "newColumnName": "modified_by",
+    "description": "Rename column Modified By to modified_by"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Created",
+    "newColumnName": "created_at",
+    "description": "Rename column Created to created_at"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Modified",
+    "newColumnName": "updated_at",
+    "description": "Rename column Modified to updated_at"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "created_at",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column created_at using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "updated_at",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column updated_at using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Audit Date",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Audit Date using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "audit_date",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column audit_date using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  }
+]
