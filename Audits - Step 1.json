@@ -101,12 +101,6 @@
   },
   {
     "op": "core/column-rename",
-    "oldColumnName": "AO_Score",
-    "newColumnName": "onwership_score",
-    "description": "Rename column AO_Score to onwership_score"
-  },
-  {
-    "op": "core/column-rename",
     "oldColumnName": ".Area",
     "newColumnName": "area_id",
     "description": "Rename column Area to area_id"
@@ -120,8 +114,8 @@
   {
     "op": "core/column-rename",
     "oldColumnName": "Comments",
-    "newColumnName": "coment",
-    "description": "Rename column Comments to coments"
+    "newColumnName": "comment",
+    "description": "Rename column Comments to coment"
   },
   {
     "op": "core/column-rename",
@@ -396,12 +390,6 @@
     "oldColumnName": "Audit Date",
     "newColumnName": "audit_date",
     "description": "Rename column Audit Date to audit_date"
-  },
-  {
-    "op": "core/column-rename",
-    "oldColumnName": "Comments",
-    "newColumnName": "coment",
-    "description": "Rename column Comments to coment"
   },
   {
     "op": "core/column-rename",
