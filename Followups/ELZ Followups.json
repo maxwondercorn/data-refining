@@ -357,5 +357,123 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column work_due using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Assigned To",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "last_name",
+    "columnInsertIndex": 7,
+    "description": "Create column last_name based on column auditor_id"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "last_name",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column last_name by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "last_name 1",
+    "newColumnName": "last_name",
+    "description": "Rename column last_name 1 to last_name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "last_name 2",
+    "newColumnName": "first_name",
+    "description": "Rename column last_name 2 to first_name"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "last_name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column last_name using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "first_name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column first_name using expression value.trim()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "last_name",
+    "expression": "grel:cells['last_name'].value.substring(0,5).toLowercase()+cells['first_name'].value.substring(0,3).toLowercase()",
+    "onError": "set-to-blank",
+    "newColumnName": "username",
+    "columnInsertIndex": 8,
+    "description": "Create column username at index 8 based on column last_name using expression grel:cells['last_name'].value.substring(0,5).toLowercase()+cells['first_name'].value.substring(0,3).toLowercase()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "username",
+    "expression": "grel:4",
+    "onError": "set-to-blank",
+    "newColumnName": "role_id",
+    "columnInsertIndex": 11,
+    "description": "Create column role_id at index 11 based on column username using expression grel:4"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "first_name",
+    "expression": "grel:cells['first_name'].value.toLowercase()+\".\"+cells['last_name'].value.toLowercase()+'@effem.com'",
+    "onError": "set-to-blank",
+    "newColumnName": "email",
+    "columnInsertIndex": 10,
+    "description": "Create column email at index 10 based on column first_name using expression grel:cells['first_name'].value.toLowercase()+\".\"+cells['last_name'].value.toLowercase()+'@effem.com'"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "email",
+    "expression": "grel:\"INSERT INTO `user` (`username`, `last_name`, `first_name`, `email`, `location_id`, `role_id`, `password`, `last_login`, `existing`, `is_active`, `created_at`, `updated_at`) VALUES ('\" + cells['username'].value + \"', '\" + cells['last_name'].value + \"', '\" + cells['first_name'].value + \"', '\" + cells['email'].value + \"', '\" + cells['location_id'].value + \"', '5', NULL, NULL, '1', '1', now(), now());\"",
+    "onError": "set-to-blank",
+    "newColumnName": "sql",
+    "columnInsertIndex": 11,
+    "description": "Create column sql at index 11 based on column email using expression grel:\"INSERT INTO `user` (`username`, `last_name`, `first_name`, `email`, `location_id`, `role_id`, `password`, `last_login`, `existing`, `is_active`, `created_at`, `updated_at`) VALUES ('\" + cells['username'].value + \"', '\" + cells['last_name'].value + \"', '\" + cells['first_name'].value + \"', '\" + cells['email'].value + \"', '\" + cells['location_id'].value + \"', '5', NULL, NULL, '1', '1', now(), now());\""
   }
 ]
