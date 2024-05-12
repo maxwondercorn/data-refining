@@ -1,0 +1,717 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "Item Type",
+    "description": "Remove column Item Type"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Path",
+    "description": "Remove column Path"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "temp",
+    "description": "Remove column temp"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Audit Notification",
+    "description": "Remove column Audit Notification"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Area",
+    "description": "Remove column Area"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Folder Child Count",
+    "description": "Remove column Folder Child Count"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "dummy",
+    "description": "Remove column dummy"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "dummyx100",
+    "description": "Remove column dummyx100"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "EmailSent",
+    "description": "Remove column EmailSent"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Follow Ups",
+    "description": "Remove column Follow Ups"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Audit Notification",
+    "description": "Remove column Audit Notification"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Value Stream",
+    "description": "Remove column Value Stream"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "dummy",
+    "description": "Remove column dummy"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "dummyx100",
+    "description": "Remove column dummyx100"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "EmailSent",
+    "description": "Remove column EmailSent"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "New Audit",
+    "description": "Remove column New Audit"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Scored",
+    "description": "Remove column Scored"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "StartWF",
+    "description": "Remove column EmailSent"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Status",
+    "description": "Remove column Status"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "VSArea",
+    "description": "Remove column VSArea"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "AO_Score",
+    "newColumnName": "onwership_score",
+    "description": "Rename column AO_Score to onwership_score"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": ".Area",
+    "newColumnName": "area_id",
+    "description": "Rename column Area to area_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Audit Date",
+    "newColumnName": "audit_date",
+    "description": "Rename column Audit Date to audit_date"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Comments",
+    "newColumnName": "coment",
+    "description": "Rename column Comments to coments"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NC",
+    "newColumnName": "noncompliant_count",
+    "description": "Rename column NC to noncompliant_count"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Rejects",
+    "newColumnName": "reject_count",
+    "description": "Rename column Rejects to reject_count"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Score",
+    "newColumnName": "score",
+    "description": "Rename column Score to score"
+  },
+
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "SN_Score",
+    "newColumnName": "sanitation_score",
+    "description": "Rename column Rejects to sanitation_score"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "VR",
+    "newColumnName": "verified_count",
+    "description": "Rename column VR to verified_count"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "VSM",
+    "newColumnName": "current_manager",
+    "description": "Rename column VSM to current_manager"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Year",
+    "newColumnName": "year",
+    "description": "Rename column Year to year"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "RejectIDs",
+    "newColumnName": "reject_ids",
+    "description": "Rename column Year to year"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "rejectsHTML",
+    "newColumnName": "rejects_html",
+    "description": "Rename column Year to year"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "verifiedHTML",
+    "newColumnName": "verified_html",
+    "description": "Rename column Year to year"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "findingsHTML",
+    "newColumnName": "findings_html",
+    "description": "Rename column Year to year"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Created By",
+    "newColumnName": "created_by",
+    "description": "Rename column Created to created_at"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Created",
+    "newColumnName": "created_at",
+    "description": "Rename column Created to created_at"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Modified By",
+    "newColumnName": "modified_by",
+    "description": "Rename column Modified By to modified_by"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Modified",
+    "newColumnName": "updated_at",
+    "description": "Rename column Modified to updated_at"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Period",
+    "newColumnName": "period",
+    "description": "Rename column Period to period"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Auditor",
+    "newColumnName": "auditor_id",
+    "description": "Rename column Auditor to auditor_id"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": ".Area",
+    "index": 0,
+    "description": "Move column .Area to position 0"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "year",
+    "index": 5,
+    "description": "Move column year to position 5"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "RejectIDs",
+    "index": 33,
+    "description": "Move column RejectIDs to position 33"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "rejectsHTML",
+    "index": 33,
+    "description": "Move column rejectsHTML to position 33"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "verifiedHTML",
+    "index": 33,
+    "description": "Move column verifiedHTML to position 33"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "findingsHTML",
+    "index": 33,
+    "description": "Move column findingsHTML to position 32"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "verifiedHTML",
+    "index": 33,
+    "description": "Move column verifiedHTML to position 33"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "id",
+    "index": 0,
+    "description": "Move column id to position 0"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "location_id",
+    "index": 1,
+    "description": "Move column location_id to position 1"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "year",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column year using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "created_at",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column created_at using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "updated_at",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column updated_at using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "audit_date",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column audit_date using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "New Audit",
+    "description": "Remove column New Audit"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Scored",
+    "description": "Remove column Scored"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "StartWF",
+    "description": "Remove column EmailSent"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Status",
+    "description": "Remove column Status"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "VSArea",
+    "description": "Remove column VSArea"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "ID",
+    "newColumnName": "old_id",
+    "description": "Rename column ID to id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "AO_Score",
+    "newColumnName": "ownership_score",
+    "description": "Rename column AO_Score to ownership_score"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Short",
+    "description": "Remove column Short"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Site Code",
+    "description": "Remove column Site Code"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Area",
+    "newColumnName": "area_id",
+    "description": "Rename column Area to area_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Audit Name",
+    "newColumnName": "name",
+    "description": "Rename column Audit Name to name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Audit Date",
+    "newColumnName": "audit_date",
+    "description": "Rename column Audit Date to audit_date"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Comments",
+    "newColumnName": "coment",
+    "description": "Rename column Comments to coment"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "NC",
+    "newColumnName": "noncompliant_count",
+    "description": "Rename column NC to noncompliant_count"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Rejects",
+    "newColumnName": "reject_count",
+    "description": "Rename column Rejects to reject_count"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Score",
+    "newColumnName": "score",
+    "description": "Rename column Score to score"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "SiteID",
+    "newColumnName": "location_id",
+    "description": "Rename column SiteID to location_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "SN_Score",
+    "newColumnName": "sanitation_score",
+    "description": "Rename column Rejects to sanitation_score"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "VR",
+    "newColumnName": "verified_count",
+    "description": "Rename column VR to verified_count"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "VSM",
+    "newColumnName": "manager_id",
+    "description": "Rename column VSM to manager_id"
+  },
+
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Target",
+    "newColumnName": "target_score",
+    "description": "Rename column Target to target_score"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Created By",
+    "newColumnName": "created_by",
+    "description": "Rename column Created to created_at"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Created",
+    "newColumnName": "created_at",
+    "description": "Rename column Created to created_at"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Modified By",
+    "newColumnName": "modified_by",
+    "description": "Rename column Modified By to modified_by"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Modified",
+    "newColumnName": "updated_at",
+    "description": "Rename column Modified to updated_at"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Periond",
+    "newColumnName": "period",
+    "description": "Rename column Period to period"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": ".Area",
+    "index": 0,
+    "description": "Move column .Area to position 0"
+  },
+
+  {
+    "op": "core/column-move",
+    "columnName": "Short",
+    "index": 4,
+    "description": "Move column Short to position 4"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "RejectIDs",
+    "index": 33,
+    "description": "Move column RejectIDs to position 33"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "rejectsHTML",
+    "index": 33,
+    "description": "Move column rejectsHTML to position 33"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "verifiedHTML",
+    "index": 33,
+    "description": "Move column verifiedHTML to position 33"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "findingsHTML",
+    "index": 33,
+    "description": "Move column findingsHTML to position 32"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "verifiedHTML",
+    "index": 33,
+    "description": "Move column verifiedHTML to position 33"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "id",
+    "index": 0,
+    "description": "Move column id to position 0"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "location_id",
+    "index": 1,
+    "description": "Move column location_id to position 1"
+  },
+
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "current_manager",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column current_manager using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "created_at",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column created_at using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "updated_at",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column updated_at using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "audit_date",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column audit_date using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "auditor_id",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "last_name",
+    "columnInsertIndex": 7,
+    "description": "Create column last_name based on column auditor_id"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "last_name",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column last_name by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "last_name 1",
+    "newColumnName": "last_name",
+    "description": "Rename column last_name 1 to last_name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "last_name 2",
+    "newColumnName": "first_name",
+    "description": "Rename column last_name 2 to first_name"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "last_name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column last_name using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "first_name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column first_name using expression value.trim()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "last_name",
+    "expression": "grel:cells['last_name'].value.substring(0,5).toLowercase()+cells['first_name'].value.substring(0,3).toLowercase()",
+    "onError": "set-to-blank",
+    "newColumnName": "username",
+    "columnInsertIndex": 8,
+    "description": "Create column username based on column last_name"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "last_name",
+          "expression": "value",
+          "columnName": "last_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "first_name",
+    "expression": "grel:cells['first_name'].value.toLowercase()+\".\"+cells['last_name'].value.toLowercase()+'@effem.com'",
+    "onError": "set-to-blank",
+    "newColumnName": "email",
+    "columnInsertIndex": 10,
+    "description": "Create column email at index 10 based on column first_name using expression grel:cells['first_name'].value.toLowercase()+\".\"+cells['last_name'].value.toLowercase()+'@effem.com'"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "email",
+    "expression": "grel:\"INSERT INTO `user` (`username`, `last_name`, `first_name`, `email`, `location_id`, `role_id`, `password`, `last_login`, `existing`, `is_active`, `created_at`, `updated_at`) VALUES ('\" + cells['username'].value + \"', '\" + cells['last_name'].value + \"', '\" + cells['first_name'].value + \"', '\" + cells['email'].value + \"', '\" + cells['location_id'].value + \"', '5', NULL, NULL, '1', '1', now(), now());\"",
+    "onError": "set-to-blank",
+    "newColumnName": "sql",
+    "columnInsertIndex": 11,
+    "description": "Create column sql at index 11 based on column email using expression grel:\"INSERT INTO `user` (`username`, `last_name`, `first_name`, `email`, `location_id`, `role_id`, `password`, `last_login`, `existing`, `is_active`, `created_at`, `updated_at`) VALUES ('\" + cells['username'].value + \"', '\" + cells['last_name'].value + \"', '\" + cells['first_name'].value + \"', '\" + cells['email'].value + \"', '\" + cells['location_id'].value + \"', '5', NULL, NULL, '1', '1', now(), now());\""
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "location_id",
+    "description": "Remove column Item location_id"
+  }
+
+]
