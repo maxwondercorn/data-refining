@@ -94,19 +94,7 @@
  {
    "op": "core/column-addition",
    "engineConfig": {
-     "facets": [
-       {
-         "type": "list",
-         "name": "last_name",
-         "expression": "value",
-         "columnName": "last_name",
-         "invert": false,
-         "omitBlank": false,
-         "omitError": false,
-         "selectBlank": false,
-         "selectError": false
-       }
-     ],
+    "facets": [],
      "mode": "row-based"
    },
    "baseColumnName": "first_name",
@@ -115,5 +103,18 @@
    "newColumnName": "email",
    "columnInsertIndex": 10,
    "description": "Create column email at index 10 based on column first_name using expression grel:cells['first_name'].value.toLowercase()+\".\"+cells['last_name'].value.toLowercase()+'@effem.com'"
- }
+ },
+ {
+  "op": "core/column-addition",
+  "engineConfig": {
+    "facets": [],
+    "mode": "row-based"
+  },
+  "baseColumnName": "email",
+  "expression": "grel:\"INSERT INTO `user` (`username`, `last_name`, `first_name`, `email`, `location_id`, `role_id`, `password`, `last_login`, `existing`, `is_active`, `created_at`, `updated_at`) VALUES ('\" + cells['username'].value + \"', '\" + cells['last_name'].value + \"', '\" + cells['first_name'].value + \"', '\" + cells['email'].value + \"', '\" + cells['location_id'].value + \"', '5', NULL, NULL, '1', '1', now(), now());\"",
+  "onError": "set-to-blank",
+  "newColumnName": "sql",
+  "columnInsertIndex": 11,
+  "description": "Create column sql at index 11 based on column email using expression grel:\"INSERT INTO `user` (`username`, `last_name`, `first_name`, `email`, `location_id`, `role_id`, `password`, `last_login`, `existing`, `is_active`, `created_at`, `updated_at`) VALUES ('\" + cells['username'].value + \"', '\" + cells['last_name'].value + \"', '\" + cells['first_name'].value + \"', '\" + cells['email'].value + \"', '\" + cells['location_id'].value + \"', '5', NULL, NULL, '1', '1', now(), now());\""
+}
 ]
