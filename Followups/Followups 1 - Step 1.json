@@ -67,7 +67,7 @@
   {
     "op": "core/column-rename",
     "oldColumnName": "ID",
-    "newColumnName": "id",
+    "newColumnName": "old_id",
     "description": "Rename column ID to id"
   },
   {
@@ -111,45 +111,6 @@
     "oldColumnName": "Audit Date",
     "newColumnName": "audit_date",
     "description": "Rename column Audit Date to audit_date"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "created_at",
-    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column created_at using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "updated_at",
-    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column updated_at using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "audit_date",
-    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column audit_date using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
   },
   {
     "op": "core/column-rename",
@@ -202,8 +163,8 @@
   {
     "op": "core/column-rename",
     "oldColumnName": "Reason",
-    "newColumnName": "rerason",
-    "description": "Rename column Reason to rerason"
+    "newColumnName": "reason",
+    "description": "Rename column Reason to reason"
   },
   {
     "op": "core/column-rename",
@@ -260,66 +221,22 @@
     "description": "Rename column Audit Score to audit_score"
   },
   {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "audit_score",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column audit_score using expression value.toNumber()"
+    "op": "core/column-rename",
+    "oldColumnName": "Audit_ID",
+    "newColumnName": "audit_id",
+    "description": "Rename column Audit Score to audit_score"
   },
   {
     "op": "core/column-rename",
     "oldColumnName": "Closed",
     "newColumnName": "date_closed",
-    "description": "Rename column Closed to date_closed"
-  },
-  {
-    "op": "core/column-removal",
-    "columnName": "Followup Updated",
-    "description": "Remove column Followup Updated"
-  },
-  {
-    "op": "core/column-removal",
-    "columnName": "Missing Followup Responses V2",
-    "description": "Remove column Missing Followup Responses V2"
-  },
-  {
-    "op": "core/column-removal",
-    "columnName": "New Followup",
-    "description": "Remove column New Followup"
-  },
-  {
-    "op": "core/column-rename",
-    "oldColumnName": "Site Code",
-    "newColumnName": "site_code",
-    "description": "Rename column Site Code to site_code"
-  },
-  {
-    "op": "core/column-removal",
-    "columnName": "StartWF",
-    "description": "Remove column StartWF"
+    "description": "Rename column Audit Score to audit_score"
   },
   {
     "op": "core/column-rename",
     "oldColumnName": "Status",
     "newColumnName": "status",
     "description": "Rename column Status to status"
-  },
-  {
-    "op": "core/column-removal",
-    "columnName": "UpdateFromFlow",
-    "description": "Remove column UpdateFromFlow"
-  },
-  {
-    "op": "core/column-rename",
-    "oldColumnName": "Value Stream",
-    "newColumnName": "value_stream",
-    "description": "Rename column Value Stream to value_stream"
   },
   {
     "op": "core/column-rename",
@@ -346,6 +263,51 @@
     "description": "Rename column WorkDue to work_due"
   },
   {
+    "op": "core/column-rename",
+    "oldColumnName": "Completed",
+    "newColumnName": "completed",
+    "description": "Rename column Completed to completed"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "created_at",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column created_at using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "updated_at",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column updated_at using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "audit_date",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column audit_date using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+  {
     "op": "core/text-transform",
     "engineConfig": {
       "facets": [],
@@ -357,6 +319,69 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column work_due using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date_closed",
+    "expression": "grel:value.toString('yyyy-MM-dd hh:mm:ss')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column work_due using expression grel:value.toString('yyyy-MM-dd hh:mm:ss')"
+  },
+
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "audit_score",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column audit_score using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "New Followup",
+    "description": "Remove column New Followup"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Followup Updated",
+    "description": "Remove column Followup Updated"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Missing Followup Responses V2",
+    "description": "Remove column Missing Followup Responses V2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "StartWF",
+    "description": "Remove column StartWF"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "UpdateFromFlow",
+    "description": "Remove column UpdateFromFlow"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Site Code",
+    "description": "Remove column Site Code"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Value Stream",
+    "description": "Remove column Value Stream"
   },
   {
     "op": "core/column-addition",
@@ -475,5 +500,79 @@
     "newColumnName": "sql",
     "columnInsertIndex": 11,
     "description": "Create column sql at index 11 based on column email using expression grel:\"INSERT INTO `user` (`username`, `last_name`, `first_name`, `email`, `location_id`, `role_id`, `password`, `last_login`, `existing`, `is_active`, `created_at`, `updated_at`) VALUES ('\" + cells['username'].value + \"', '\" + cells['last_name'].value + \"', '\" + cells['first_name'].value + \"', '\" + cells['email'].value + \"', '\" + cells['location_id'].value + \"', '5', NULL, NULL, '1', '1', now(), now());\""
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "period_closed",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "-",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column period_closed by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "period_closed 1",
+    "newColumnName": "period_closed_period",
+    "description": "Rename column period_closed 1 to period_closed_period"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "period_closed 2",
+    "newColumnName": "period_closed_year",
+    "description": "Rename column period_closed 2 to period_closed_year"
+  },
+
+  // move columns
+
+  {
+    "op": "core/column-move",
+    "columnName": "audit_name",
+    "index": 1,
+    "description": "Move column audit_name to position 1"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "audit_item",
+    "index": 4,
+    "description": "Move column audit_name to position 4"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "audit_id",
+    "index": 1,
+    "description": "Move column audit_name to position 1"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "old_id",
+    "expression": "grel:cells['location_id'].value+\"-\"+cells['audit_id'].value",
+    "onError": "set-to-blank",
+    "newColumnName": "audit_lookup",
+    "columnInsertIndex": 1,
+    "description": "Create column audit_lookup at index 1 based on column old_id using expression grel:cells['location_id'].value+\"-\"+cells['audit_id'].value"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "audit_lookup",
+    "expression": "grel:NULL",
+    "onError": "set-to-blank",
+    "newColumnName": "new_audit_id",
+    "columnInsertIndex": 2,
+    "description": "Create column new_audit_id at index 2 based on column audit_lookup using expression grel:NULL"
   }
 ]
