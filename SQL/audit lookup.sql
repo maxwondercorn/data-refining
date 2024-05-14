@@ -1,10 +1,12 @@
 SELECT
+CONCAT(area.location_id, '-', audit.old_id) AS audit_lookup,
+audit.id AS new_id,
 # period,
 year,
 area.location_id AS location,
 # value_stream.name AS 'Value Stream',
 area.name AS Area,
-CONCAT(area.location_id, '-', audit.old_id) AS audit_lookup,
+
 # score
 audit.name
 FROM audit
