@@ -1,0 +1,77 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "Folder Child Count",
+    "description": "Remove column Folder Child Count"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Item Type",
+    "description": "Remove column Item Type"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Path",
+    "description": "Remove column Path"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "App Created By",
+    "description": "Remove column App Created By"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "App Modified By",
+    "description": "Remove column App Modified By"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Color Tag",
+    "description": "Remove column Color Tag"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Compliance Asset Id",
+    "description": "Remove column Compliance Asset Id"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Content Type",
+    "description": "Remove column Content Type"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Item Child Count",
+    "description": "Remove column Item Child Count"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Label applied by",
+    "description": "Remove column Label applied by"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Label setting",
+    "description": "Remove column Label setting"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Retention label",
+    "description": "Remove column Retention label"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Retention label Applied",
+    "description": "Remove column Retention label Applied"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Item Type",
+    "description": "Remove column Item Type"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Path",
+    "description": "Remove column Path"
+  }
+]
