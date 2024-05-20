@@ -1,0 +1,90 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "year",
+    "description": "Remove column year"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "period",
+    "description": "Remove column period"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "modified_by",
+    "description": "Remove column modified_by"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "created_by",
+    "description": "Remove column created_by"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "work_completed",
+    "description": "Remove column work_completed"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "audit_id",
+    "description": "Remove column audit_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "new_audit_id",
+    "newColumnName": "audit_id",
+    "description": "Rename column new_audit_id to audit_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "status",
+    "newColumnName": "verifed_by_status",
+    "description": "Rename column status to verifed_by_status"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "work_status",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "status",
+    "columnInsertIndex": 12,
+    "description": "Create column status at index 12 based on column work_status using expression grel:value"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "status",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Verified"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "500"
+      }
+    ],
+    "description": "Mass edit cells in column status"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "audit_item",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "question_id",
+    "columnInsertIndex": 5,
+    "description": "Create column question_id at index 5 based on column audit_item using expression grel:value"
+  }
+]

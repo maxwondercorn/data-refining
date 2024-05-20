@@ -529,7 +529,6 @@
     "description": "Rename column period_closed 2 to period_closed_year"
   },
 
-  // move columns
 
   {
     "op": "core/column-move",
