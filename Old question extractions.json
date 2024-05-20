@@ -1,0 +1,200 @@
+[
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "SiteID",
+    "newColumnName": "site_id",
+    "description": "Rename column SiteID to site_id"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Comment",
+    "description": "Remove column Comment"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Response",
+    "description": "Remove column Response"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Work Comment",
+    "description": "Remove column Work Comment"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Work Status",
+    "description": "Remove column Work Status"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Reason",
+    "description": "Remove column Reason"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Location",
+    "description": "Remove column Location"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Closed",
+    "description": "Remove column Closed"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "PClosed",
+    "description": "Remove column PClosed"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "WorkDue",
+    "description": "Remove column WorkDue"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "New Followup",
+    "description": "Remove column New Followup"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Followup Updated",
+    "description": "Remove column Followup Updated"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "2021",
+    "description": "Remove column 2021"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "App Created By",
+    "description": "Remove column App Created By"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "App Modified By",
+    "description": "Remove column App Modified By"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Assigned To",
+    "description": "Remove column Assigned To"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Audit",
+    "description": "Remove column Audit"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Audit Score",
+    "description": "Remove column Audit Score"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Audit_ID",
+    "description": "Remove column Audit_ID"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Completed",
+    "description": "Remove column Completed"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Created",
+    "description": "Remove column Created"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Created By",
+    "description": "Remove column Created By"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Date and Time",
+    "description": "Remove column Date and Time"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Item Score",
+    "description": "Remove column Item Score"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Lifetime",
+    "description": "Remove column Lifetime"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Modified By",
+    "description": "Remove column Modified By"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Short",
+    "description": "Remove column Short"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Rejects",
+    "description": "Remove column Rejects"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Site Code",
+    "description": "Remove column Site Code"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Status",
+    "description": "Remove column Status"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Value Stream",
+    "description": "Remove column Value Stream"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Modified",
+    "description": "Remove column Modified"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "WO",
+    "description": "Remove column WO"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Work Audited By",
+    "description": "Remove column Work Audited By"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Work Completed",
+    "description": "Remove column Work Completed"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Period",
+    "description": "Remove column Period"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Area",
+    "description": "Remove column Area"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "Description",
+    "index": 0,
+    "description": "Move column Description to position 0"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "Audit Item",
+    "index": 0,
+    "description": "Move column Audit Item to position 0"
+  }
+]
