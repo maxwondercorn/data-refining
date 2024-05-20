@@ -1,0 +1,101 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "work_audit_by",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "last_name",
+    "columnInsertIndex": 7,
+    "description": "Create column last_name at index 7 based on column manager_id using expression grel:value"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "last_name",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column last_name by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "last_name 1",
+    "newColumnName": "last_name",
+    "description": "Rename column last_name 1 to last_name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "last_name 2",
+    "newColumnName": "first_name",
+    "description": "Rename column last_name 2 to first_name"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "last_name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column last_name using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "first_name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column first_name using expression value.trim()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "last_name",
+    "expression": "grel:cells['last_name'].value.substring(0,5).toLowercase()+cells['first_name'].value.substring(0,3).toLowercase()",
+    "onError": "set-to-blank",
+    "newColumnName": "work_audit_by_username",
+    "columnInsertIndex": 8,
+    "description": "Create column username at index 8 based on column last_name using expression grel:cells['last_name'].value.substring(0,5).toLowercase()+cells['first_name'].value.substring(0,3).toLowercase()"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "last_name"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "first_name"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "work_audit_by_username",
+    "index": 0,
+    "description": "Move column work_audit_by_username to position 0"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "work_audit_by",
+    "index": 0,
+    "description": "Move column work_audit_by to position 0"
+  }
+]
