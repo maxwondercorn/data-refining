@@ -78,15 +78,15 @@
   },
   {
     "op": "core/column-rename",
-    "oldColumnName": "modified_by",
-    "newColumnName": "updated_by",
-    "description": "Rename column modified_by to updated_by"
-  },
-  {
-    "op": "core/column-rename",
     "oldColumnName": "Modified By",
     "newColumnName": "modified_by",
     "description": "Rename column Modified By to modified_by"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "modified_by",
+    "newColumnName": "updated_by",
+    "description": "Rename column modified_by to updated_by"
   },
   {
     "op": "core/column-rename",
@@ -223,8 +223,7 @@
   {
     "op": "core/column-rename",
     "oldColumnName": "Audit_ID",
-    "newColumnName": "audit_id",
-    "description": "Rename column Audit Score to audit_score"
+    "newColumnName": "old_audit_id"
   },
   {
     "op": "core/column-rename",
@@ -529,7 +528,6 @@
     "description": "Rename column period_closed 2 to period_closed_year"
   },
 
-
   {
     "op": "core/column-move",
     "columnName": "audit_name",
@@ -544,7 +542,7 @@
   },
   {
     "op": "core/column-move",
-    "columnName": "audit_id",
+    "columnName": "old_audit_id",
     "index": 1,
     "description": "Move column audit_name to position 1"
   },
@@ -555,11 +553,10 @@
       "mode": "row-based"
     },
     "baseColumnName": "old_id",
-    "expression": "grel:cells['location_id'].value+\"-\"+cells['audit_id'].value",
+    "expression": "grel:cells['location_id'].value+\"-\"+cells['old_audit_id'].value",
     "onError": "set-to-blank",
     "newColumnName": "audit_lookup",
-    "columnInsertIndex": 1,
-    "description": "Create column audit_lookup at index 1 based on column old_id using expression grel:cells['location_id'].value+\"-\"+cells['audit_id'].value"
+    "columnInsertIndex": 1
   },
   {
     "op": "core/column-addition",

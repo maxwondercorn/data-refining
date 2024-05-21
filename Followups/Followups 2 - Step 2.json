@@ -25,11 +25,6 @@
     "description": "Remove column work_completed"
   },
   {
-    "op": "core/column-removal",
-    "columnName": "audit_id",
-    "description": "Remove column audit_id"
-  },
-  {
     "op": "core/column-rename",
     "oldColumnName": "new_audit_id",
     "newColumnName": "audit_id",
@@ -86,5 +81,262 @@
     "newColumnName": "question_id",
     "columnInsertIndex": 5,
     "description": "Create column question_id at index 5 based on column audit_item using expression grel:value"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "audit_score"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "last_name"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "first_name"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "year"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "period"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "audit_lookup"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "completed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NULL"
+      }
+    ],
+    "description": "Mass edit cells in column completed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "completed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "true"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column completed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "completed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "false"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0"
+      }
+    ],
+    "description": "Mass edit cells in column completed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "work_completed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NULL"
+      }
+    ],
+    "description": "Mass edit cells in column work_completed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "work_completed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "true"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column work_completed"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "work_completed",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "false"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "0"
+      }
+    ],
+    "description": "Mass edit cells in column work_completed"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "work_completed",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column work_completed using expression value.toNumber()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "work_status",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Verified"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "500"
+      }
+    ],
+    "description": "Mass edit cells in column work_status"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "work_status",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Not Verified"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "200"
+      }
+    ],
+    "description": "Mass edit cells in column work_status"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "comment",
+    "newColumnName": "text",
+    "description": "Rename column comment to text"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "reason",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NULL"
+      }
+    ],
+    "description": "Mass edit cells in column reason"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "owner_response",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NULL"
+      }
+    ],
+    "description": "Mass edit cells in column owner_response"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "work_order",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NULL"
+      }
+    ],
+    "description": "Mass edit cells in column work_order"
   }
 ]
