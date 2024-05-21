@@ -19,11 +19,7 @@
     "columnName": "created_by",
     "description": "Remove column created_by"
   },
-  {
-    "op": "core/column-removal",
-    "columnName": "work_completed",
-    "description": "Remove column work_completed"
-  },
+
   {
     "op": "core/column-rename",
     "oldColumnName": "new_audit_id",
@@ -163,77 +159,6 @@
       }
     ],
     "description": "Mass edit cells in column completed"
-  },
-  {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "work_completed",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [],
-        "fromBlank": true,
-        "fromError": false,
-        "to": "NULL"
-      }
-    ],
-    "description": "Mass edit cells in column work_completed"
-  },
-  {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "work_completed",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [
-          "true"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "1"
-      }
-    ],
-    "description": "Mass edit cells in column work_completed"
-  },
-  {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "work_completed",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [
-          "false"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "0"
-      }
-    ],
-    "description": "Mass edit cells in column work_completed"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "work_completed",
-    "expression": "value.toNumber()",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column work_completed using expression value.toNumber()"
   },
   {
     "op": "core/mass-edit",
