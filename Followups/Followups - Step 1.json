@@ -133,8 +133,7 @@
   {
     "op": "core/column-rename",
     "oldColumnName": "Item Score",
-    "newColumnName": "item_score",
-    "description": "Rename column Item Score to item_score"
+    "newColumnName": "score"
   },
   {
     "op": "core/column-rename",
@@ -157,8 +156,7 @@
   {
     "op": "core/column-rename",
     "oldColumnName": "Work Status",
-    "newColumnName": "work_status",
-    "description": "Rename column Work Status to work_status"
+    "newColumnName": "status"
   },
   {
     "op": "core/column-rename",
@@ -181,8 +179,7 @@
   {
     "op": "core/column-rename",
     "oldColumnName": "Location",
-    "newColumnName": "location",
-    "description": "Rename column Location to location"
+    "newColumnName": "location_text"
   },
   {
     "op": "core/column-rename",
@@ -228,20 +225,17 @@
   {
     "op": "core/column-rename",
     "oldColumnName": "Closed",
-    "newColumnName": "date_closed",
-    "description": "Rename column Audit Score to audit_score"
+    "newColumnName": "verification_date"
   },
   {
     "op": "core/column-rename",
     "oldColumnName": "Status",
-    "newColumnName": "status",
-    "description": "Rename column Status to status"
+    "newColumnName": "not_needed_status"
   },
   {
     "op": "core/column-rename",
     "oldColumnName": "Work Audited By",
-    "newColumnName": "work_audit_by",
-    "description": "Rename column Work Audited By to work_audit_by"
+    "newColumnName": "verified_by"
   },
   {
     "op": "core/column-rename",
@@ -250,22 +244,18 @@
     "description": "Rename column Work Comment to work_comment"
   },
   {
-    "op": "core/column-rename",
-    "oldColumnName": "Work Completed",
-    "newColumnName": "work_completed",
-    "description": "Rename column Work Completed to work_completed"
+    "op": "core/column-removal",
+    "columnName": "Work Completed"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Completed"
   },
   {
     "op": "core/column-rename",
     "oldColumnName": "WorkDue",
     "newColumnName": "work_due",
     "description": "Rename column WorkDue to work_due"
-  },
-  {
-    "op": "core/column-rename",
-    "oldColumnName": "Completed",
-    "newColumnName": "completed",
-    "description": "Rename column Completed to completed"
   },
   {
     "op": "core/text-transform",

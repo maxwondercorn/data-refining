@@ -27,25 +27,6 @@
     "description": "Rename column new_audit_id to audit_id"
   },
   {
-    "op": "core/column-rename",
-    "oldColumnName": "status",
-    "newColumnName": "verifed_by_status",
-    "description": "Rename column status to verifed_by_status"
-  },
-  {
-    "op": "core/column-addition",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "baseColumnName": "work_status",
-    "expression": "grel:value",
-    "onError": "set-to-blank",
-    "newColumnName": "status",
-    "columnInsertIndex": 12,
-    "description": "Create column status at index 12 based on column work_status using expression grel:value"
-  },
-  {
     "op": "core/mass-edit",
     "engineConfig": {
       "facets": [],
@@ -55,15 +36,31 @@
     "expression": "value",
     "edits": [
       {
-        "from": [
-          "Verified"
-        ],
+        "from": ["Verified"],
         "fromBlank": false,
         "fromError": false,
         "to": "500"
       }
     ],
     "description": "Mass edit cells in column status"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "status",
+    "expression": "value",
+    "edits": [
+      {
+        "from": ["Not Verified"],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "200"
+      }
+    ],
+    "description": "Mass edit cells in column work_status"
   },
   {
     "op": "core/column-addition",
@@ -106,73 +103,13 @@
     "op": "core/mass-edit",
     "engineConfig": {
       "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "completed",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [],
-        "fromBlank": true,
-        "fromError": false,
-        "to": "NULL"
-      }
-    ],
-    "description": "Mass edit cells in column completed"
-  },
-  {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "completed",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [
-          "true"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "1"
-      }
-    ],
-    "description": "Mass edit cells in column completed"
-  },
-  {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "completed",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [
-          "false"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "0"
-      }
-    ],
-    "description": "Mass edit cells in column completed"
-  },
-  {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [],
       "mode": "record-based"
     },
     "columnName": "work_status",
     "expression": "value",
     "edits": [
       {
-        "from": [
-          "Verified"
-        ],
+        "from": ["Verified"],
         "fromBlank": false,
         "fromError": false,
         "to": "500"
@@ -190,9 +127,7 @@
     "expression": "value",
     "edits": [
       {
-        "from": [
-          "Not Verified"
-        ],
+        "from": ["Not Verified"],
         "fromBlank": false,
         "fromError": false,
         "to": "200"
@@ -234,9 +169,7 @@
     "expression": "value",
     "edits": [
       {
-        "from": [
-          ""
-        ],
+        "from": [""],
         "fromBlank": true,
         "fromError": false,
         "to": "NULL"
@@ -254,9 +187,7 @@
     "expression": "value",
     "edits": [
       {
-        "from": [
-          ""
-        ],
+        "from": [""],
         "fromBlank": true,
         "fromError": false,
         "to": "NULL"

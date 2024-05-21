@@ -1,0 +1,80 @@
+[
+    {
+      "op": "core/column-move",
+      "columnName": "updated_at",
+      "index": 0,
+      "description": "Move column updated_at to position 0"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "created_at",
+      "index": 0,
+      "description": "Move column created_at to position 0"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "work_audit_by",
+      "newColumnName": "verified_by",
+      "description": "Rename column work_audit_by to verified_by"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "verified_by",
+      "index": 0,
+      "description": "Move column verified_by to position 0"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "verification_date",
+      "index": 0,
+      "description": "Move column verification_date to position 0"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "status",
+      "index": 0,
+      "description": "Move column status to position 0"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "work_order",
+      "index": 0,
+      "description": "Move column work_order to position 0"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "score",
+      "index": 0,
+      "description": "Move column score to position 0"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "location_text",
+      "index": 0,
+      "description": "Move column location_text to position 0"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "text",
+      "index": 0,
+      "description": "Move column text to position 0"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "question_id",
+      "index": 0,
+      "description": "Move column question_id to position 0"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "audit_id",
+      "index": 0,
+      "description": "Move column audit_id to position 0"
+    },
+    {
+      "op": "core/column-move",
+      "columnName": "old_id",
+      "index": 0,
+      "description": "Move column old_id to position 0"
+    }
+  ]
