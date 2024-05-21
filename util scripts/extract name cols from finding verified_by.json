@@ -5,7 +5,7 @@
       "facets": [],
       "mode": "row-based"
     },
-    "baseColumnName": "work_audit_by",
+    "baseColumnName": "verified_by",
     "expression": "grel:value",
     "onError": "set-to-blank",
     "newColumnName": "last_name",
@@ -74,7 +74,7 @@
     "baseColumnName": "last_name",
     "expression": "grel:cells['last_name'].value.substring(0,5).toLowercase()+cells['first_name'].value.substring(0,3).toLowercase()",
     "onError": "set-to-blank",
-    "newColumnName": "work_audit_by_username",
+    "newColumnName": "verified_by_username",
     "columnInsertIndex": 8,
     "description": "Create column username at index 8 based on column last_name using expression grel:cells['last_name'].value.substring(0,5).toLowercase()+cells['first_name'].value.substring(0,3).toLowercase()"
   },
@@ -88,14 +88,14 @@
   },
   {
     "op": "core/column-move",
-    "columnName": "work_audit_by_username",
+    "columnName": "verified_by_username",
     "index": 0,
-    "description": "Move column work_audit_by_username to position 0"
+    "description": "Move column verified_by_username to position 0"
   },
   {
     "op": "core/column-move",
-    "columnName": "work_audit_by",
+    "columnName": "verified_by",
     "index": 0,
-    "description": "Move column work_audit_by to position 0"
+    "description": "Move column verified_by to position 0"
   }
 ]

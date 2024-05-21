@@ -89,13 +89,11 @@
   {
     "op": "core/column-move",
     "columnName": "assigned_to_username",
-    "index": 0,
-    "description": "Move column work_audit_by_username to position 0"
+    "index": 0
   },
   {
     "op": "core/column-move",
     "columnName": "assigned_to",
-    "index": 0,
-    "description": "Move column work_audit_by to position 0"
+    "index": 0
   }
 ]
