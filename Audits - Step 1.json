@@ -56,11 +56,6 @@
   },
   {
     "op": "core/column-removal",
-    "columnName": "Value Stream",
-    "description": "Remove column Value Stream"
-  },
-  {
-    "op": "core/column-removal",
     "columnName": "dummy",
     "description": "Remove column dummy"
   },
@@ -104,6 +99,19 @@
     "oldColumnName": ".Area",
     "newColumnName": "area_id",
     "description": "Rename column Area to area_id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "area_id",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "area_name_temp",
+    "columnInsertIndex": 3,
+    "description": "Create column area_name_temp at index 3 based on column area_id using expression grel:value"
   },
   {
     "op": "core/column-rename",
@@ -695,11 +703,12 @@
     "newColumnName": "sql",
     "columnInsertIndex": 11,
     "description": "Create column sql at index 11 based on column email using expression grel:\"INSERT INTO `user` (`username`, `last_name`, `first_name`, `email`, `location_id`, `role_id`, `password`, `last_login`, `existing`, `is_active`, `created_at`, `updated_at`) VALUES ('\" + cells['username'].value + \"', '\" + cells['last_name'].value + \"', '\" + cells['first_name'].value + \"', '\" + cells['email'].value + \"', '\" + cells['location_id'].value + \"', '5', NULL, NULL, '1', '1', now(), now());\""
-  },
-  {
-    "op": "core/column-removal",
-    "columnName": "location_id",
-    "description": "Remove column Item location_id"
   }
+  // ,
+  // {
+  //   "op": "core/column-removal",
+  //   "columnName": "location_id",
+  //   "description": "Remove column Item location_id"
+  // }
 
 ]
